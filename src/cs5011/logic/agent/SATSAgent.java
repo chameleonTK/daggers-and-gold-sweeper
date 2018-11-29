@@ -119,7 +119,7 @@ public class SATSAgent extends SPSAgent {
 								continue;
 							}
 							List<String> subKb = new ArrayList<String>();
-							for(Coordinate p: neignbour) {							
+							for(Coordinate p: covered) {							
 								if (selectedTile.contains(p)) {
 									subKb.add(""+this.convertCoordinateToNumber(p.x, p.y));
 								} else {
